@@ -1,6 +1,5 @@
 package factura;
 
-import java.net.URL;
 import java.util.Date;
 
 import paciente.Paciente;
@@ -9,8 +8,7 @@ import turno.Turno;
 public class Factura {
     private Date fecha;
     private String nombre, apellido, direccion, telefono, desc;
-    private double monto;
-    private URL correo;
+    private double monto;private Stringcorreo;
     private int dni, id;
     private boolean pagado;
 
@@ -98,11 +96,11 @@ public class Factura {
         this.monto = monto;
     }
 
-    public URL getCorreo() {
+    public StringgetCorreo() {
         return correo;
     }
 
-    public void setCorreo(URL correo) {
+    public void setCorreo(Stringcorreo) {
         this.correo = correo;
     }
 

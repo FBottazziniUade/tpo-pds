@@ -1,17 +1,16 @@
 package paciente;
 
-import java.net.URL;
 import java.sql.Date;
 
 public class Paciente {
     private String nombre, apellido, direccion, telefono, obraSocial;
     private Date fechaNacimiento;
-    private URL correo;
+    private String correo;
     private Tipo tipo;
     private int dni;
 
     public Paciente(String nombre, String apellido, String direccion, String telefono, String obraSocial,
-            Date fechaNacimiento, URL correo, Tipo tipo, int dni) {
+            Date fechaNacimiento, String correo, Tipo tipo, int dni) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
@@ -24,7 +23,7 @@ public class Paciente {
     }
 
     public Paciente(String nombre, String apellido, String direccion, String telefono, String obraSocial,
-            Date fechaNacimiento, URL correo, int dni) {
+            Date fechaNacimiento, String correo, int dni) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
@@ -35,7 +34,8 @@ public class Paciente {
         this.dni = dni;
     }
 
-    public Paciente(String nombre, String apellido, String direccion, String telefono, Date fechaNacimiento, URL correo,
+    public Paciente(String nombre, String apellido, String direccion, String telefono, Date fechaNacimiento,
+            String correo,
             Tipo tipo, int dni) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -47,7 +47,8 @@ public class Paciente {
         this.dni = dni;
     }
 
-    public Paciente(String nombre, String apellido, String direccion, String telefono, Date fechaNacimiento, URL correo,
+    public Paciente(String nombre, String apellido, String direccion, String telefono, Date fechaNacimiento,
+            String correo,
             int dni) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -82,7 +83,7 @@ public class Paciente {
         return fechaNacimiento;
     }
 
-    public URL getCorreo() {
+    public String getCorreo() {
         return correo;
     }
 
